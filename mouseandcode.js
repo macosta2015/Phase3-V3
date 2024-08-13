@@ -35,17 +35,52 @@ const ExtensionLeft = require('./components/ExtensionLeft.js');  // Ensure the p
 
 
 
-        //Seecting the tabs
+
+
+
+
+        //Seecting the tabs EXTENSIONS LEFT
+        ////////////////////////////////////////////////////////////////////////////
+        const selectorTabs2 = 'tab-list-item.os-tab-bar-tab[data-id="e30941a9804ec64336179006"][data-icon-src="partstudio"]';
+        // const selectorTabs2 = 'tab-list-item.os-tab-bar-tab[data-id="f7c6d76366e44e0ca33c94b6"][data-icon-src="assembly"]';
+        console.log("ExtensionLeft ");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        await ExtensionLeft(newPage, selectorTabs2);
+        console.log("ExtensionLeft");
+        await waitForEnter();
+        ////////////////////////////////////////////////////////////////////////////
+
+
+        //Seecting the tabs EXTENSIONS RIGHT
+        ////////////////////////////////////////////////////////////////////////////
+        const selectorTabs3 = 'tab-list-item.os-tab-bar-tab[data-id="a21ad6c852c19e9b77d5074d"][data-icon-src="partstudio"]';
+        // const selectorTabs2 = 'tab-list-item.os-tab-bar-tab[data-id="f7c6d76366e44e0ca33c94b6"][data-icon-src="assembly"]';
+        console.log("ExtensionLeft ");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        await ExtensionLeft(newPage, selectorTabs3);
+        console.log("ExtensionLeft");
+        await waitForEnter();
+        ////////////////////////////////////////////////////////////////////////////
+
+
+        //Seecting the tabs Assembly1
         ////////////////////////////////////////////////////////////////////////////
         const selectorTabs1 = 'tab-list-item.os-tab-bar-tab[data-id="f7c6d76366e44e0ca33c94b6"][data-icon-src="assembly"]';
         console.log("ExtensionLeft ");
         console.log(''); // This logs an empty line, effectively skipping a line
         await waitForEnter();
-        // await ExtensionLeft(newPage);
         await ExtensionLeft(newPage, selectorTabs1);
         console.log("ExtensionLeft");
         await waitForEnter();
         ////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 
 
         //Working on (2) Extrude 1(4.00)
