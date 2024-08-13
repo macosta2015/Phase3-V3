@@ -35,16 +35,17 @@ const ExtensionLeft = require('./components/ExtensionLeft.js');  // Ensure the p
 
 
 
-        //////////////////
+        //Seecting the tabs
+        ////////////////////////////////////////////////////////////////////////////
+        const selectorTabs1 = 'tab-list-item.os-tab-bar-tab[data-id="f7c6d76366e44e0ca33c94b6"][data-icon-src="assembly"]';
         console.log("ExtensionLeft ");
         console.log(''); // This logs an empty line, effectively skipping a line
         await waitForEnter();
-        await ExtensionLeft(newPage);
+        // await ExtensionLeft(newPage);
+        await ExtensionLeft(newPage, selectorTabs1);
         console.log("ExtensionLeft");
         await waitForEnter();
-
-        //////////////////
-
+        ////////////////////////////////////////////////////////////////////////////
 
 
         //Working on (2) Extrude 1(4.00)
